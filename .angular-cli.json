@@ -9,7 +9,8 @@
       "outDir": "dist",
       "assets": [
         "assets",
-        "favicon.ico",
+        "favicon.png",
+        "apple-touch-favicon.png",
         "404.html",
         "compositeArtifacts.xml",
         "compositeContent.xml",
