@@ -12,28 +12,6 @@ import { HomePageModule } from './home-page/home-page.module';
 import { BingSplashModule } from './bing-splash/bing-splash.module';
 import { SharedModule } from './shared.module';
 
-import { L10nConfig, L10nLoader, TranslationModule, StorageStrategy, ProviderType, LocalizationModule } from 'angular-l10n';
-
-const l10nConfig: L10nConfig = {
-  locale: {
-      languages: [
-          { code: 'en', dir: 'ltr' },
-          { code: 'ru', dir: 'ltr' }
-      ],
-      //language: 'ru',
-      defaultLocale: { languageCode: 'en', countryCode: 'US' },
-      storage: StorageStrategy.Cookie
-  },
-  translation: {
-      providers: [
-          { type: ProviderType.Fallback, prefix: './assets/l10n/locale-en', fallbackLanguage: [] },
-          { type: ProviderType.Static, prefix: './assets/l10n/locale-' }
-      ],
-      caching: true,
-      composedKeySeparator : '::'
-      //missingValue: 'No key'
-  }
-};
 
 @NgModule({
   declarations: [
@@ -42,13 +20,10 @@ const l10nConfig: L10nConfig = {
   imports: [
     BrowserModule,
     HttpClientModule,
-    NgbModule.forRoot(),
+    SharedModule.forRoot(),
     NavigationModule,
     HomePageModule,
     BingSplashModule,
-    LocalizationModule.forRoot(l10nConfig),
-    //TranslationModule.forRoot(l10nConfig),
-    SharedModule.forRoot(),
     RouterModule.forRoot([
       { path: '**', redirectTo: '/' }
    ])
@@ -61,8 +36,7 @@ export class AppModule {
    * Loads external stylesheets dynamically
    * @param document
    */
-  constructor(@Inject(DOCUMENT) private document: any, private l10nLoader: L10nLoader) {
-    this.l10nLoader.load();
+  constructor(@Inject(DOCUMENT) private document: any) {
     //bootstrap.css
     const bootswatch = document.createElement('link');
     bootswatch.rel = 'stylesheet';

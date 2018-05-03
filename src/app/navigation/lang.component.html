@@ -1,4 +1,4 @@
-<div class="btn-group">
+<div *ngIf="current" class="btn-group">
     <div class="btn-group" ngbDropdown #langDrop="ngbDropdown" role="group" aria-label="Change language">
       <button class="btn btn-primary active" ngbDropdownToggle>{{ current.shortcut | uppercase }}</button>
       <ul ngbDropdownMenu class="dropdown-menu dropdown-menu-right" role="menu">

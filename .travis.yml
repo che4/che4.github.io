@@ -7,7 +7,7 @@ branches:
   - develop
 before_install:
 - cat /dev/null > .yarnrc
-script: yarn run ng build -prod --aot
+script: yarn run ng build --target=production --aot
 deploy:
   provider: pages
   skip_cleanup: true
