@@ -9,7 +9,7 @@ import { AppComponent } from './app.component';
 import { NavigationComponent } from './navigation/navigation.component'
 import { NavigationModule } from './navigation/navigation.module';
 import { HomePageModule } from './home-page/home-page.module';
-import { BingSplashModule } from './bing-splash/bing-splash.module';
+import { BingSplashModule } from './bing/bing-splash.module';
 import { SharedModule } from './shared.module';
 
 
