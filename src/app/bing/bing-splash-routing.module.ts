@@ -4,7 +4,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { BingSplashComponent } from './bing-splash.component'
 
 const routes: Routes = [
-  { path: 'bing-splash', component: BingSplashComponent }
+  { path: 'bingsplash', component: BingSplashComponent }
 ];
 
 
