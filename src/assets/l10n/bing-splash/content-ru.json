@@ -1,0 +1,36 @@
+{
+  "Bing" : {
+    "HTML" : {
+      "About" : "На сайте <a href=\"https://stackoverflow.com/questions/43234135/custom-splash-screen-for-eclipse-plugin-non-rcp\">StackOverflow <i class=\"fa fa-stack-overflow\" style=\"font-size:1.4rem\" aria-hidden=\"true\"></i></a> есть вопрос &ndash; Возможно ли, чтобы плагин подменил заставку в Eclipse? Я принял вызов и создал этот <em>&quot;Bing.com splash plug-in&quot;</em>.",
+      "Source code": "см. на <a href=\"https://github.com/che4/bing-splash\">GitHub.com <i class=\"fa fa-github\" style=\"font-size:1.4rem\" aria-hidden=\"true\"></i></a>",
+      "Requirements" : "Любая программа Eclipse, работающая на Java 8+",
+      "Update site" : "Добавить сайт обновлений <var>https://che4.github.io/</var>",
+      "Update site menu" : "Для этого в Eclipse выбрать меню <kbd>Help</kbd> &rarr; <kbd>Install software</kbd>",
+      "Restart Eclipse" : "Перезапустить Eclipse",
+      "Restart Eclipse notice" : "Иногда, если заставка прописана в файле <var>eclipse.ini</var>, рестарт не отобразит новую заставку. Нужно выключить Eclipse и запустить заново.",
+      "Show view menu" : "Выбрать меню <kbd>Window</kbd> &rarr; <kbd>Show View</kbd> &rarr; <kbd>Other...</kbd>",
+      "Bing view" : "затем найти и выбрать <kbd>Bing splash settings</kbd>",
+      "Select new splash" : "Когда вы откроете <var>View</var>, загрузятся картинки за неделю с сайта <a href=\"http://bing.com\">bing.com</a> и вы сможете выбрать другую заставку для Eclipse."
+    },
+    "Image" : {
+      "Add che4 repo" : "Добавить репозиторий Че4",
+      "Install feature" : "Выбрать плагины и снять ненужные галочки. Красным обведено как должно быть!",
+      "Install feature anyway" : "Install anyway! Красным обведено где нажимать.",
+      "Restart Eclipse" : "Перезапустить Eclipse",
+      "New Bing splash" : "Вот и новая заставка!",
+      "Select Show view menu" : "Выбрать \"Show view\" menu",
+      "Select Bing view" : "Выбрать \"Bing splash settings\"",
+      "Select new splash" : "Выбрать новую заставку"
+    },
+    "Source code": "Исходный код",
+    "Requirements" : "Требования",
+    "Installation" : "Установка",
+    "Install feature" : "Установить плагин",
+    "Install feature anyway" : " и игнорировать предупреждение",
+    "New Bing splash" : "После перезапуска увидите новую заставку",
+    "Settings" : "Как сменить заставку",
+    "Implementation details" : "Детали реализации",
+    "Release engineering" : "Управление релизами",
+    "Building from source" : "Сборка из исходников"
+  }
+}

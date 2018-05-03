@@ -1,0 +1,16 @@
+{
+  "About_Che4" : "HA-HA-HA!!!",
+  "Home" : {
+    "HTML" : {
+      "Project aims" : "The final goal of the Che4 project is to run <a href=\"https://www.eclipse.org/flux/\">Eclipse Flux</a> in Eclipse IDE (without dependencies on RabbitMQ and Node.js). Also the project has educational purposes, it reveals some unobvious capabilities of Eclipe RCP.",
+      "BingSplashDescription" : "Substitute Eclipse RCP splash sreen with images from <a href=\"http://bing.com\">Bing.com</a>",
+      "ApacheCamelDescription" : "Run Apache Camel as HTTP reverse proxy",
+      "EclipseAsServiceDescription" : "Run Eclipse IDE as Windows or Linux service"
+    },
+    "Subprojects" : "Subprojects",
+    "Reseach subprojects" : "Research subprojects",
+    "BingSplash" : "Bing.com splash Eclipse plug-in",
+    "ApacheCamel" : "Reverse proxy Eclipse plug-in",   
+    "EclipseAsService" : "Eclipse IDE as service"
+  }
+}

@@ -1,0 +1,83 @@
+<article class="container">
+  <p l10nTranslate [innerHTML]="'Bing::HTML::About'"></p>
+  <h4 l10nTranslate>Bing::Source code</h4>
+  <p l10nTranslate [innerHTML]="'Bing::HTML::Source code'"></p>
+  <h4 l10nTranslate>Bing::Requirements</h4>
+  <p l10nTranslate [innerHTML]="'Bing::HTML::Requirements'"></p>
+  <h4 l10nTranslate>Bing::Installation</h4>
+  <ol>
+    <li>
+      <span l10nTranslate [innerHTML]="'Bing::HTML::Update site'"></span>
+      <i class="fa fa-image mx-1" (click)="showPicture('Bing::Image::Add che4 repo')"></i>
+      <span l10nTranslate [innerHTML]="'Bing::HTML::Update site menu'"></span>
+    </li>
+    <li>
+      <span l10nTranslate>Bing::Install feature</span>
+      <i class="fa fa-image mx-1" (click)="showPicture('Bing::Image::Install feature')"></i>
+      <span l10nTranslate>Bing::Install feature anyway</span>
+      <i class="fa fa-image ml-1" (click)="showPicture('Bing::Image::Install feature anyway')"></i>
+    </li>
+    <li>
+      <span l10nTranslate [innerHTML]="'Bing::HTML::Restart Eclipse'"></span>
+      <i class="fa fa-image" (click)="showPicture('Bing::Image::Restart Eclipse')"></i>
+      <ul><li><small l10nTranslate [innerHTML]="'Bing::HTML::Restart Eclipse notice'"></small></li></ul>
+    </li>
+    <li>
+      <span l10nTranslate>Bing::New Bing splash</span>
+      <i class="fa fa-image ml-1" (click)="showPicture('Bing::Image::New Bing splash')"></i>
+    </li>
+  </ol>
+  <section>
+    <h4 l10nTranslate>Bing::Settings</h4>
+    <ol>
+      <li>
+        <span l10nTranslate [innerHTML]="'Bing::HTML::Show view menu'"></span>
+      </li>
+      <li>
+        <span l10nTranslate [innerHTML]="'Bing::HTML::Bing view'"></span>
+        <i class="fa fa-image mx-1" (click)="showPicture('Bing::Image::Select Bing view')"></i>
+      </li>
+      <li>
+          <span l10nTranslate [innerHTML]="'Bing::HTML::Select new splash'"></span>
+          <i class="fa fa-image mx-1" (click)="showPicture('Bing::Image::Select new splash')"></i>
+        </li>
+    </ol>
+  </section>
+  <section>
+    <h4 l10nTranslate>Bing::Implementation details</h4>
+    <p>To deal with splash one has to use Eclipse P2 (Povisioning platform) &ndash; this is the only way to archive that.
+      The second point is to substitute splash after the first Eclipse restart &ndash; for that
+      <a href="https://help.eclipse.org/mars/index.jsp?topic=%2Forg.eclipse.platform.doc.isv%2Fguide%2Fp2_actions_touchpoints.html&cp=2_0_20_1_3">P2 touchpoint</a>
+      is the only solution. In Eclipse splash can be set in two places:
+    </p>     
+    <ol>
+      <li>in <var>configuraiton/config.ini</var> file, as <code>osgi.splashPath</code></li>
+      <li>in <var>eclipse.ini</var> file, as <code>-showsplash</code> parameter</li>
+    </ol>
+    <p><a href="https://github.com/che4/bing-splash/tree/master/bing-splash.touchpoint">The touchpoint plugin</a> is called when
+    <a href="https://github.com/che4/bing-splash/tree/master/bing-splash.feature">Bing's splash feature</a> is being installed. In
+    <a href="https://github.com/che4/bing-splash/blob/master/bing-splash.feature/p2.inf">p2.inf</a> file we have set <var>metaRequirements</var>
+    to our touchpoint, thus making P2 to install the bundle <strong>before</strong> installing the feature itself. The feature has
+    <a href="https://raw.githubusercontent.com/che4/bing-splash/master/bing-splash.feature/splash.bmp">embedded splash screen</a>
+    that you'll see after restart.
+    </p>
+    <p>
+      <a href="https://github.com/che4/bing-splash/tree/master/bing-splash.plugin">Bing's plugin</a> is activated when you open it's view
+      in Eclipse (see instructions above) and downloads <em>photos of the day</em> from bing.com, converts them to BMP (raw) format&mdash;Eclipse supports only this format for splash srceen.
+      Then the plugin figures out Eclipse-feature embracing it and saves BMP-files in the feature's directory. Features unlike ordinary OSGi-bundles are directories, not jar-files.
+    </p>
+    <p>
+      When one choose new splash, it saves corresponding bmp-file as <var>splash.bmp</var> in Bings-feature directory and next time
+      you will see it as an Eclipse splash.
+    </p>
+  </section>
+  <section>
+      <h4 l10nTranslate>Bing::Release engineering</h4>
+      <p>The project uses Git-Flow methodology. The building server&mdash;Travis-CI&mdash;launches building process when git-commit in 
+        <var>development</var> branch is tagged on GitHub. The process is described in <a href="https://github.com/che4/bing-splash/blob/master/.travis.yml">.travis.yml</a>.
+      </p>
+  </section>
+  <section>
+      <h4 l10nTranslate>Bing::Building from source</h4>
+  </section>
+</article>

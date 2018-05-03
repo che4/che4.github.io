@@ -1,0 +1,9 @@
+<div class="btn-group">
+    <div class="btn-group" ngbDropdown #langDrop="ngbDropdown" role="group" aria-label="Change language">
+      <button class="btn btn-primary active" ngbDropdownToggle>{{ current.shortcut | uppercase }}</button>
+      <ul ngbDropdownMenu class="dropdown-menu dropdown-menu-right" role="menu">
+          <li *ngFor="let lang of langs" role="menuitem" class="dropdown-item"><a class="btn" (click)="current=lang">{{ lang.shortcut | uppercase }} &ndash; {{ lang.localizedName }}</a></li>
+      </ul>
+    </div>
+    <span class="btn btn-outline-primary" (click)="$event.stopPropagation(); langDrop.open();">{{ current.localizedName }}</span>
+</div>
