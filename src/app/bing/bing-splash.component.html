@@ -79,5 +79,22 @@
   </section>
   <section>
       <h4 l10nTranslate>Bing::Building from source</h4>
+      <h5>in Eclipse IDE</h5>
+      <p>In order to avoid installing additional tools in your existing Eclipse&mdash;use <a href="https://www.eclipse.org/downloads/packages/eclipse-rcp-and-rap-developers/oxygen3a">Eclipse for RCP and RAP Developers</a>.</p>
+      <ol>
+        <li>
+          Import Git project of target platform from <var>https://github.com/che4/target-dev-platform.git</var>
+          <p>This is actually a Maven project, but you can import into Eclipse as General project.</p>
+        </li>
+        <li>
+          Double click on <var>target-dev-platform.target</var>, wait until it resolves and <kbd>Set as Active Target Platform</kbd>
+        </li>
+        <li>
+          Git clone <var>develop</var> branch from <var>https://github.com/che4/bing-splash.git</var>        
+        </li>
+        <li>
+          Import existing Maven projects from that directory
+        </li>
+      </ol>
   </section>
 </article>
