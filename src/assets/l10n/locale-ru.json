@@ -5,12 +5,14 @@
       "Project aims" : "Цель проекта Че4 &ndash; запустить <a href=\"https://www.eclipse.org/flux/\">Eclipse Flux</a> внутри Eclipse IDE (без зависимостей от RabbitMQ и Node.js). Также, проект преследует и образовательные цели, раскрывая некоторые неочевидные возможности Eclipse RCP.",
       "BingSplashDescription" : "Замена заставки Eclipse IDE фотографией с сайта <a href=\"http://bing.com\">Bing.com</a>",
       "ApacheCamelDescription" : "Запуск Apache Camel как реверсивного HTTP-прокси сервера в Eclipse IDE",
-      "EclipseAsServiceDescription" : "Запуск Eclipse IDE как служба Windows или сервис в Linux"
+      "EclipseAsServiceDescription" : "Запуск Eclipse IDE как служба Windows или сервис в Linux",
+      "MySQL_EclipseRCP" : "Подключается к серверу MySQL и отображает список баз данных. Это шаблонный проект, демонстрирующий как собирать программу на Eclipse RCP с помощью Maven (Eclipse Tycho) или же Eclipse IDE (Eclipse PDE)."
     },
     "Subprojects" : "Подпроекты",
     "Reseach subprojects" : "Исследовательские подпроекты",
     "BingSplash" : "Заставка с Bing.com",
     "ApacheCamel" : "Реверсивный прокси-сервер",   
-    "EclipseAsService" : "Eclipse IDE как сервис"
+    "EclipseAsService" : "Eclipse IDE как сервис",
+    "Simple MySQL client on Eclipse RCP" : "Простой клиент MySQL на Eclipse RCP"
   }
 }
