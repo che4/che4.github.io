@@ -1,13 +1,13 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <?compositeArtifactRepository version='1.0.0'?>
-<repository name='Che4 project update site'
-    type='org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository' 
-    version='1.0.0'>
-  <properties size='1'>
-    <property name='p2.timestamp' value='1243833503510'/>
+<repository name='Che4' type='org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository' version='1.0.0'>
+  <properties size='2'>
+    <property name='p2.timestamp' value='1243833503511'/>
+    <property name='p2.atomic.composite.loading' value='false' />
   </properties>
-  <children size='2'>
+  <children size='3'>
     <child location='https://dl.bintray.com/che4/p2/'/>
-    <child location='https://dl.bintray.com/che4/p2-i18n-menu/'/>
+    <child location='https://dl.bintray.com/che4/p2-i18n-menu/i18n-menu'/>
+    <child location='https://dl.bintray.com/che4/p2-i18n-menu/i18n-menu-l10n'/>
   </children>
 </repository>
